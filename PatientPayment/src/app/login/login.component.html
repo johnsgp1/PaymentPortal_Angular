@@ -1,3 +1,158 @@
-<p>
-  login works!
-</p>
+
+
+
+<div id="navbar" class="navbar navbar-default navbar-collapse h-navbar">
+  <div class="navbar-container" id="navbar-container">
+      <div class="col-sm-4">
+          <img src="../assets/img/Iris-Health-Small.png" alt="Iris-Health" style="padding-top: 6px;padding-bottom: 4px;">
+      </div>
+      <div class="navbar-header pull-left col-sm-8 ">
+          <a class="navbar-brand" style="float:right">
+              <!--<div class="hidden-xs">Patient Portal</div>-->
+              <div class="af-name-head" style="padding-top:9px;padding-bottom: 4px;">
+                  <!--<img src="js/lib/others/Iris-Health.jpg" alt="Iris-Health" style="width:304px;height:50px">-->
+
+                  <i class="fa fa-hospital-o"></i>
+                  <span id="ClinicNameSpan">Patient Payment Portal</span>
+              </div>
+          </a>
+      </div>
+  </div>
+</div>
+<div id="navbarMobile" class="navbar navbar-default navbar-collapse h-navbar hidden">
+  <div class="navbar-container col-xs-12 col-sm-12 col-lg-12" id="navbar-container" style="padding-left: 0px">
+      <div class="col-xs-3 col-sm-3 col-lg-3">
+          <img src="../assets/img/Iris-Health-Logo.png" alt="Iris-Health" style="padding-top: 6px;padding-bottom: 4px;">
+      </div>
+      <div class="col-xs-9 col-sm-9 col-lg-9" style="padding-top: 10px">
+             
+          <span id="ClinicNameSpan" style="font-size: 20px;color: white">Rounding Web App</span>
+
+
+      </div>
+  </div>
+</div>
+<!--<div><hr class="no-margin" style="border-width: 3px;border-color:orange"></div>-->
+<div class="main-container" id="main-container" >
+     <div id="content" class="container" style="margin-right: 0px;">
+
+      <div class="row" >
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 hidden-xs hidden-sm">
+          <div class="box2 clearfix">
+                  <h2 style="margin:0; padding:0px; text-align:left;">Test</h2>
+          <h1 style="margin:0; padding:0px; text-align:left;">Test</h1>
+                                              <div class="w3-content w3-section" style="max-width:500px">
+                                              <img class="mySlides" src="../assets/img/LoginPayment1.jpg" style="width:100%;display:none;">
+                                              <img class="mySlides" src="../assets/img/Phone_Large_Cropped.png" style="width:100%;display:none;">
+                                              <img class="mySlides" src="../assets/img/assets/img/30461.jpg" style="width:100%;display:none;">
+                                              
+                                              </div>
+<!--						<img class="app-screenshot" src="styles/img/LoginPayment1.jpg" style="width: 500px;">-->
+          <div class="clearfix" style="display: inline-block;  padding: 20px 0px 4px;">
+            
+      </div>
+          <h4>Paying your healthcare bills is easier than ever</h4>
+                </div>
+
+          
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4" style="width: 354px;">
+          <div class="well no-padding" style="margin-top: 60px;">
+                                                  <div class="widget-main" style="border:none;background: white;height: 390px;width: 324px;">
+                              <h3 class="header smaller lighter blue" style="margin-top: 10px;margin-bottom: 26px;">
+                                      Sign in
+                                      <small>Here</small>
+                              </h3>
+                              <form id="frmUserLogin" class="frm_Login" >
+                                  <fieldset>
+<!--                                        <div class="form-group">
+                                           <span class="input-icon input-icon-right" style="width: 100%">
+                                          <input type="text" name="ClinicName" id="ClinicName" class="sch-txt-control form-control" placeholder="ClinicName" maxlength="50" style="border-color: lightblue" />
+                                          <i class="ace-icon fa fa-pencil green"></i>
+                                          </span>
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="text" name="ClinicId" id="ClinicId" class="sch-txt-control form-control" placeholder="ClinicId" style="border-color: lightblue" maxlength="5"/>
+                                          </div>-->
+<div class="form-group" style="margin-top: 10px;margin-bottom: 26px;">
+  <select class="browser-default custom-select" style="width: 270px;" id="paymentClinics">
+      <option selected disabled="">Select Clinic</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+       <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+       <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+       <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+       <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+       <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+       <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+      
+  </select>
+  <label style="margin-left: 10px;"><a href="javascript:void(0)" role="button" title="Please select a clinic"><i class="menu-icon fa fa-info-circle blue" style="padding-left: 0px;" id="LongQuestion_7"></i></a></label>
+</div>  
+<!--<div class="col-sm-9">
+                  <input data-rel="tooltip" type="text" id="form-field-6" placeholder="Tooltip on hover" title="" data-placement="bottom" data-original-title="Hello Tooltip!">
+                  <span class="help-button" data-rel="popover" data-trigger="hover" data-placement="left" data-content="More details." title="" data-original-title="Popover on hover">?</span>
+                </div>-->
+                                      <div class="form-group" style="margin-top: 10px;margin-bottom: 26px;">
+                                          <input type="text" name="MRN" id="Username" class="" placeholder="MRN" style="border-color: lightblue;width:270px;" maxlength="20" />
+                                          <label style="margin-left: 10px;"><a href="javascript:void(0)" role="button" title="Please enter MRN"><i class="menu-icon fa fa-info-circle blue" style="padding-left: 0px;" id="LongQuestion_7"></i></a></label>
+                                      </div>
+                                      <div class="form-group" style="margin-top: 10px;margin-bottom: 26px;">
+                                          <input type="text" name="DOB" id="password" class="" placeholder="Date of birth" maxlength="20" style="border-color: lightblue;width:270px;" />
+                                          <label style="margin-left: 10px;"><a href="javascript:void(0)" role="button" title="Please enter date of birth"><i class="menu-icon fa fa-info-circle blue" style="padding-left: 0px;" id="LongQuestion_7"></i></a></label>
+                                      </div>
+                                      <div class="form-group" style="margin-top: 10px;margin-bottom: 16px;">
+                                          <input type="text" name="Email" id="email" class="" placeholder="Email" maxlength="20" style="border-color: lightblue;width:270px;" />
+                                          <label style="margin-left: 10px;"><a href="javascript:void(0)" role="button" title="Please enter email"><i class="menu-icon fa fa-info-circle blue" style="padding-left: 0px;" id="LongQuestion_7"></i></a></label>
+                                      </div>
+                                      <div class="form-group" style="margin-top: 10px;margin-bottom: 26px;">
+                                                                                      <button type="submit" id="loginbtn" class="btn btn-primary btn-block" (click)="myClickFunction($event)" style="float: right;margin-right: 9px;border-radius: 5px;left: 10px;">
+                                                                                      <i class="ace-icon fa fa-key bigger-110"></i>Login
+                                                                                      </button>
+<!--                                            <button type="submit" id="loginbtn" class="btn btn-info btn-sm" style="float: right;margin-right: 9px; border-radius: 5px;">
+                                          <i class="ace-icon fa fa-key bigger-110"></i>Login
+                                          </button>-->
+                                      </div>
+                                 <div class="form-group" style="margin-top: 10px;margin-bottom: 26px;">
+                                 
+                              </div>
+                                      
+                                      <div id="DivError" class="col-md-12 col-xs-8"></div>
+                                  </fieldset>
+                              </form>
+                          </div>
+
+          </div>
+                
+          
+          
+          
+        </div>
+      </div>
+                          
+ 
+</div>
+   <div style="position: absolute;bottom:25px;width:100%;text-align:center;color:#438eb9"><span></span></div>
+          <div style="position: absolute;bottom:5px;width:100%;text-align:center;color:#438eb9"><span>Copyright © 2019-2020</span><span style="color:#438eb9"> Iris-Health LLC All rights reserved.</span></div>
+</div>   
+

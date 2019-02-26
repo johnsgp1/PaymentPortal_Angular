@@ -1,0 +1,160 @@
+
+
+<div id="navbar" class="navbar navbar-default">
+  <div class="navbar-container" id="navbar-container">
+          <!-- #section:basics/sidebar.mobile.toggle -->
+          <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler">
+                  <span class="sr-only">Toggle sidebar</span>
+
+                  <span class="icon-bar"></span>
+
+                  <span class="icon-bar"></span>
+
+                  <span class="icon-bar"></span>
+          </button>
+
+          <!-- /section:basics/sidebar.mobile.toggle -->
+          <div class="navbar-header pull-left">
+
+                  <!-- #section:basics/navbar.layout.brand -->
+                  
+                  <a class="navbar-brand">
+                      <!--<div class="hidden-xs">Patient Portal</div>-->
+                      <div class="af-name-head">
+                       <i class="fa fa-leaf"></i>
+                       
+                          <span id="ClinicNameSpan" > </span>
+                      </div>
+                  </a>
+
+          </div>
+
+          <!-- #section:basics/navbar.dropdown -->
+          <div class="navbar-header pull-right af-name-right" >
+                  <a class="navbar-brand"> 
+                         <div class="af-name-right hidden-xs" id="patientName">
+                          
+                               <!--   <i class="ace-icon fa fa-power-off" ></i>-->
+                                  &nbsp;
+                                  <!--  <i class="ace-icon fa fa-question-circle" title="Help"></i>-->
+                         </div>
+                 </a>
+          </div>
+
+          <!-- /section:basics/navbar.dropdown -->
+  </div><!-- /.navbar-container -->
+</div>
+
+<!-- /section:basics/navbar.layout -->
+<div class="main-container" id="main-container">
+
+
+<!-- #section:basics/sidebar -->
+<div id="sidebar" class="sidebar responsive">
+      <ul class="nav nav-list">
+          <li id="basicinfoview" class="active hidden" data-rel="popover" data-trigger="hover" data-placement="right" data-content='add your Demographics details here' >
+                      <a  id="basicinfoaTag" href="#basicinfoedit">
+                          <i class="menu-icon fa fa-info-circle"></i>
+                          <span class="menu-text"> Basic Info </span>
+                      </a>
+                      <b class="arrow"></b>
+          </li>
+          <li id="Insurance" class="firstView hidden" data-rel="popover" data-trigger="hover" data-placement="right" data-content='Add your Insurance Details (Primary,Secondary,Tertiary) '>
+              <a href="#insurance">
+                  <i class="menu-icon fa fa-plus-square"></i>
+                  <span class="menu-text" > Insurance</span>
+              </a>
+              <b class="arrow"></b>
+          </li>
+          <li  class="firstView hidden" id="appointments "  data-rel="popover" data-trigger="hover" data-placement="right" data-content='You can view your existing appointment,take new one'>
+              <a href="#Appointments" >
+              <i class="menu-icon fa fa-calendar"></i>
+              <span class="menu-text"> Appointments </span>
+              </a>
+              <b class="arrow"></b>
+          </li>
+
+          <li class="firstView hidden" id="Messages" data-rel="popover" data-trigger="hover" data-placement="right" data-content='You can Send/Recieve messages to provider or Front desk '>
+                     <a href="#Messages" >
+                             <i class="menu-icon  fa fa-envelope"></i>
+                             <span class="menu-text"> Messages </span>
+                     </a>
+          </li>
+
+
+         <li id="EmployerGuarantor" class="firstView hidden" data-rel="popover" data-trigger="hover" data-placement="right" data-content='add your Employer Gurantor details here'>
+              <a href="#employerGuarantor">
+              <i class="menu-icon fa fa-tasks"></i>
+              <span class="menu-text">Employer</span>
+             </a>
+              <b class="arrow"></b>
+          </li>
+         
+
+          <li id="Settings" class="firstView hidden" data-rel="popover" data-trigger="hover" data-placement="right" data-content='You can edit your password here '>
+              <a href="#Settings">
+              <i class="menu-icon fa fa-tag"></i>
+               <span class="menu-text"> Settings</span>
+              </a>
+              <b class="arrow"></b>
+          </li>
+          <li id="Payment" class="firstView" data-rel="popover" data-trigger="hover" data-placement="right" data-content='You can view and perform payment transactions here '>
+              <a href="#Payment">
+              <i class="menu-icon fa fa-usd"></i>
+              <span class="menu-text"> Payments</span>
+              </a>
+              <b class="arrow"></b>
+          </li>
+           <li id="Logout" >
+              <a href="#logout">
+              <i class="menu-icon fa fa-power-off"></i>
+              <span class="menu-text">LogOut</span>
+              </a>
+              <b class="arrow"></b>
+          </li>
+
+      </ul><!-- /.nav-list -->
+
+      <!-- #section:basics/sidebar.layout.minimize -->
+      <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+              <i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+      </div>
+
+</div>
+
+<!-- /section:basics/sidebar -->
+<div class="main-content">
+<!-- #section:basics/content.breadcrumbs -->
+<div class="breadcrumbs" id="breadcrumbs">
+ 
+  <ul class="breadcrumb">
+          <li>
+                  <i class="ace-icon fa fa-home home-icon"></i>
+                  Home
+          </li>
+
+          <li id="listspecify">
+             Basic Info
+          </li>
+
+  </ul><!-- /.breadcrumb -->
+
+</div>
+
+<!-- /section:basics/content.breadcrumbs -->
+<div class="page-content" id="pageContent" >     
+<!-- <div class="message-loading-overlay tmplLoading"><i class="fa-spin ace-icon fa fa-spinner orange2 bigger-300"></i></div> -->
+<router-outlet name="sidebar"></router-outlet>
+
+
+</div><!-- /.page-content -->
+
+
+
+</div><!-- /.main-content -->
+<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+</a>
+</div>
+<script src="assets/js/ace-extra.min.js"></script>
+<script src="assets/js/ace.min.js"></script>
