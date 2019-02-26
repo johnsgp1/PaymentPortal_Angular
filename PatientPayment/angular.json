@@ -23,9 +23,26 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/ace-fonts.css",
+              "src/assets/css/ace.min.css",
+              "src/assets/css/ace-skins.min.css",
+              "src/assets/css/ace-rtl.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/ace-extra.min.js",
+              "src/assets/js/jquery-ui.custom.min.js",
+              "src/assets/js/jquery.ui.touch-punch.min.js",
+              "src/assets/js/jquery.easypiechart.min.js",
+              "src/assets/js/jquery.sparkline.min.js",
+              "src/assets/js/flot/jquery.flot.min.js",
+              "src/assets/js/flot/jquery.flot.pie.min.js",
+              "src/assets/js/flot/jquery.flot.resize.min.js",
+              "src/assets/js/ace-elements.min.js",
+              "src/assets/js/ace.min.js"
+            ]
           },
           "configurations": {
             "production": {
